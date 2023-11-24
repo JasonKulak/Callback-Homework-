@@ -28,6 +28,7 @@ const f = l => {
     let es = 0, p = 0, c = 1, n = 0
     //While Loop. c (1) is lessthan or equal to l (55). This loop will be executed as long as the test condition (c <= l)/(1 <= 55) is true
     while (c <= l) {
+        //conditional statement(s)?
       n = c + p;
       [c, p] = [n, c]
       es += (c % 2 === 0) ? c : 0
