@@ -33,31 +33,31 @@
 // let sum = add(n1, n2);
 // console.log(sum);
 
-function add(a, b) {
-    console.log(a + b);
-}
-add(1, 2)
+// function add(a, b) {
+//     console.log(a + b);
+// }
+// add(1, 2)
 
 //Make a function subtract that takes two arguments (numbers) and subtracts them
 
-function subtract(x, y) {
-    console.log(x - y);
-}
-subtract(15, 5)
+// function subtract(x, y) {
+//     console.log(x - y);
+// }
+// subtract(15, 5)
 
 //Make a function multiply that takes two arguments and multiplies them
 
-function multiply(j, k) {
-    console.log(j * k);
-}
-multiply(2, 4)
+// function multiply(j, k) {
+//     console.log(j * k);
+// }
+// multiply(2, 4)
 
 //Make a function divide that takes two arguments and divides them
 
-function divide(w, v) {
-    console.log(w / v);
-}
-divide(50, 25)
+// function divide(w, v) {
+//     console.log(w / v);
+// }
+// divide(50, 25)
 
 //Make a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
 //version1
@@ -68,13 +68,42 @@ divide(50, 25)
 // calculate(operates)
 
 //version2
-function calculate(operates) {
-    return operates(5, 4)
-}
-console.log(calculate((a, b) => a + b))
-console.log(calculate((a, b) => a - b))
-console.log(calculate((a, b) => a * b))
-console.log(calculate((a, b) => a / b))
+// function calculate(operates) {
+//     return operates(5, 4)
+// }
+// console.log(calculate((a, b) => a + b))
+// console.log(calculate((a, b) => a - b))
+// console.log(calculate((a, b) => a * b))
+// console.log(calculate((a, b) => a / b))
 
 //Q??????????????????^^^
 
+///////////////////////////////
+//Function definition placement
+///////////////////////////////
+
+//Clean up this code, so that it works and has function definitions in the correct place
+
+
+const bar = () => {
+    console.log('bar here');
+}
+bar();
+
+const foo = () => {
+    console.log('foo here');
+}
+foo();
+
+///////////////
+//Error reading
+///////////////
+
+foo();
+
+const foo ()=>{
+    console.log('hi');
+}
+
+//Error - Missing initializer in cost declaration
+//meaning - It's missing the equal sign before the arrow function.  A more textbook definition - This error occurs when a variable is declared using const. but it's value is no initialized on the same line.
