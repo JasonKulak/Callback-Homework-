@@ -85,25 +85,56 @@
 //Clean up this code, so that it works and has function definitions in the correct place
 
 
-const bar = () => {
-    console.log('bar here');
-}
-bar();
+// const bar = () => {
+//     console.log('bar here');
+// }
+// bar();
 
-const foo = () => {
-    console.log('foo here');
-}
-foo();
+// const foo = () => {
+//     console.log('foo here');
+// }
+// foo();
 
 ///////////////
 //Error reading
 ///////////////
 
-foo();
+// foo();
 
-const foo ()=>{
-    console.log('hi');
-}
+// const foo ()=>{
+//     console.log('hi');
+// }
 
 //Error - Missing initializer in cost declaration
 //meaning - It's missing the equal sign before the arrow function.  A more textbook definition - This error occurs when a variable is declared using const. but it's value is no initialized on the same line.
+
+//////////////////////////////
+//Array methods with callbacks
+//////////////////////////////
+
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+///////
+//Every
+///////
+
+for(let i = 0; i < nums.length; i++){
+    const item = nums[i]
+    if (item >= 0) {
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+}
+
+for (let i = 0; i < panagram.length; i++) {
+    const word = panagram[i].length
+    if(word < 8) {
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+}
