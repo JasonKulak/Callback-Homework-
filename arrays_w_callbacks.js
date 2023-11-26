@@ -167,8 +167,32 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 //Find Index
 ////////////
 
-const indexNum = (element) => element / 3;
-console.log(nums.findIndex(indexNum));
+// const indexNum = (element) => element / 3;
+// console.log(nums.findIndex(indexNum));
 
-const shortWord = panagram.findIndex((element) => element.length < 2);
-console.log(shortWord)
+// const shortWord = panagram.findIndex((element) => element.length < 2);
+// console.log(shortWord)
+
+//////////
+//For Each
+//////////
+
+
+
+/////
+//Map
+/////
+
+const newArr = []
+
+for(let i = 0; i < nums.length; i++){
+    const item = nums[i]
+    newArr.push(item * 100)
+}
+console.log(newArr)
+
+
+const upper = panagram.map(element => {
+    return element.toUpperCase();
+});
+console.log(upper);
