@@ -121,20 +121,34 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 //Every
 ///////
 
-for(let i = 0; i < nums.length; i++){
-    const item = nums[i]
-    if (item >= 0) {
-        console.log(true)
-    }else{
-        console.log(false)
-    }
-}
+// for(let i = 0; i < nums.length; i++){
+//     const item = nums[i]
+//     if (item >= 0) {
+//         console.log(true)
+//     }else{
+//         console.log(false)
+//     }
+// }
 
-for (let i = 0; i < panagram.length; i++) {
-    const word = panagram[i].length
-    if(word < 8) {
-        console.log(true)
-    }else{
-        console.log(false)
-    }
-}
+// for (let i = 0; i < panagram.length; i++) {
+//     const word = panagram[i].length
+//     if(word < 8) {
+//         console.log(true)
+//     }else{
+//         console.log(false)
+//     }
+// }
+
+////////
+//Filter
+////////
+
+const smallNumbers = nums.filter(function(number){
+    return number < 4;
+});
+console.log(smallNumbers)
+
+const evenWords = panagram.filter(function(words){
+    return words.length % 2 === 0
+});
+console.log(evenWords)
