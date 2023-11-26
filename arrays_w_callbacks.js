@@ -143,12 +143,22 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 //Filter
 ////////
 
-const smallNumbers = nums.filter(function(number){
-    return number < 4;
-});
-console.log(smallNumbers)
+// const smallNumbers = nums.filter(function(number){
+//     return number < 4;
+// });
+// console.log(smallNumbers)
 
-const evenWords = panagram.filter(function(words){
-    return words.length % 2 === 0
-});
-console.log(evenWords)
+// const evenWords = panagram.filter(function(words){
+//     return words.length % 2 === 0
+// });
+// console.log(evenWords)
+
+//////
+//Find
+//////
+
+const found = nums.find((value) => value / 5);
+console.log(found);
+
+const bigWord = panagram.find((element) => element.length > 5);
+console.log(bigWord);
