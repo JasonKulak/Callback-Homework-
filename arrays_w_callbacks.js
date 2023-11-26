@@ -157,8 +157,18 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 //Find
 //////
 
-const found = nums.find((value) => value / 5);
-console.log(found);
+// const found = nums.find((value) => value / 5);
+// console.log(found);
 
-const bigWord = panagram.find((element) => element.length > 5);
-console.log(bigWord);
+// const bigWord = panagram.find((element) => element.length > 5);
+// console.log(bigWord);
+
+////////////
+//Find Index
+////////////
+
+const indexNum = (element) => element / 3;
+console.log(nums.findIndex(indexNum));
+
+const shortWord = panagram.findIndex((element) => element.length < 2);
+console.log(shortWord)
