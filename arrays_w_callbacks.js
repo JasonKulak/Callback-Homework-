@@ -196,3 +196,13 @@ const upper = panagram.map(element => {
     return element.toUpperCase();
 });
 console.log(upper);
+
+//////
+//Some
+//////
+
+const divides = (element) => element / 7;
+
+console.log(nums.some(divides));
+
+
